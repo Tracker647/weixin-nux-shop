@@ -1,0 +1,108 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "components/product-column/index",
+          "pathName": "components/product-column/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "components/title-bar",
+          "pathName": "components/title-bar/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "components/product-category/index",
+          "pathName": "components/product-category/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/category/category",
+          "pathName": "pages/category/category",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/theme/theme",
+          "pathName": "pages/theme/theme",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cart/cart",
+          "pathName": "pages/cart/cart",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/order",
+          "pathName": "pages/order/order",
+          "query": "account=0.1&from=cart",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "components/search-bar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "components/search-bar",
+          "pathName": "components/search-bar/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "components/address",
+          "pathName": "components/address/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "components/image-button",
+          "pathName": "components/image-button/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "components/address",
+          "pathName": "components/address/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

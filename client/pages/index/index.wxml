@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <search-bar-comp class="mysearchBar" mode="navigate" bind:toSearch="toSearch"></search-bar-comp>
+  <!-- 1.轮播图 -->
+  <swiper class="swiper-container" indicator-dots="{{indicatorDots}}" indicator-active-color="#fff"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+    <block wx:for="{{banners}}" wx:key="item">
+      <swiper-item class="swiper-item">
+        <image class="swiper-img" src="{{item.image}}" mode='scaleToFill'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 2、主题栏 -->
+  <view class='theme-container'>
+    <block wx:for="{{themes}}" wx:key="index">
+      <view class='theme-box' data-themeType="{{item.theme_type}}" bind:tap='themeNavigation'>
+        <view class='theme-icon'>
+          <image src='{{item.theme_icon}}'></image>
+        </view>
+        <text>{{item.theme_name}}</text>
+      </view>
+    </block>
+  </view>
+  <!-- 分割线 -->
+  <view class='dividing-line'></view>
+  <!-- 3、最新上线 -->
+  <view class='products-latest-container'>
+    <title-bar-comp title='最新上线'></title-bar-comp>
+    <block wx:for="{{products}}" wx:key="item">
+      <product-column-comp product="{{item}}"></product-column-comp>
+    </block>
+  </view>
+</view>

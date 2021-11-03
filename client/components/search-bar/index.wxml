@@ -1,0 +1,33 @@
+<!--components/search-bar/index.wxml-->
+<view class="page-hd {{extClass}}">
+  <view class="search-container" bindtap="_methodRoute">
+    <view class="search-form">
+      <view class="iconfont iconsousuo"></view>
+      <input type="text" placeholder="搜索" value="{{keywordValue}}" bindinput="searchInput" bindblur="searchConfirm"
+        data-keyword="{{keywordValue}}" />
+      <view wx:if="{{keywordValue.length !== 0}}" class="iconfont iconguanbi" bindtap="clearKeyword"></view>
+    </view>
+  </view>
+</view>
+
+<view class="page-bd" wx:if="{{mode === 'search'}}">
+  <view class="search-history" wx:if="{{keywordValue.length === 0}}">
+    <view class="history-title">
+      <text>历史记录</text>
+      <view class="history-del" bindtap="clearHistory">
+        <text>清空历史记录</text>
+      </view>
+    </view>
+    <view class="history-container">
+      <view class="history-item" wx:for="{{historyList}}" bindtap="searchConfirm" data-keyword="{{item}}"> {{item}}
+      </view>
+    </view>
+
+  </view>
+  <view class="search-match" wx:else>
+    <view class="match-container">
+      <view class="match-item" wx:for="{{matchList}}" data-keyword="{{item}}">
+        {{item.query_name ? item.query_name : '暂无结果'}}</view>
+    </view>
+  </view>
+</view>

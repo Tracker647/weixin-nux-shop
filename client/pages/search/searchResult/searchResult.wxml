@@ -1,0 +1,8 @@
+<!--client/pages/search/searchResult/searchResult.wxml-->
+<search-bar-comp mode="navigate" history="{{historyData}}" bind:toSearch="toSearch">
+</search-bar-comp>
+<view class="match-ul">
+  <view class="match-li" wx:for="{{matchList}}" wx:for-item="product">
+      <product-column-comp product="{{product}}"></product-column-comp>
+  </view>
+</view>

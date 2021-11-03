@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "search-bar-comp":"/components/search-bar/index",
+    "product-column-comp": "/components/product-column/index"
+  }
+}

@@ -1,0 +1,16 @@
+<!--components/address/index.wxml-->
+<view class="container">
+  <view class="addressList" wx:for="{{addressList}}">
+    <view class="addressItem">
+      <view class="address-title">
+        <text class="name">收获人:{{item.userName}}</text>
+        <text class="phone">{{item.phone}}</text>
+      </view>
+      <view class="address-content">
+        <text class="address">收获地址:{{item.detailAddress}}</text>
+        <icon class="iconfont icon-webicon213"></icon>
+      </view>
+    </view>
+  </view>
+
+</view>

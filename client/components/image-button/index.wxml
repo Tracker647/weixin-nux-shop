@@ -1,0 +1,6 @@
+<!--components/image-button/index.wxml-->
+<button open-type="{{openType}}" plain="{{true}}" class="container" lang="zh_CN">
+  <slot name="info" bind:tap="onGetUserProfile"></slot>
+  <slot name="address" bindtap="address"></slot>
+  <slot name="share"></slot>
+</button>

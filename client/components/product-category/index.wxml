@@ -1,0 +1,9 @@
+<!--components/category/index.wxml-->
+<view class='container' bind:tap='productDetails' data-productid="{{product._id}}">
+  <view class='product-img'>
+    <image src='{{product.product_img}}'></image>
+  </view>
+  <view class='product-name'>
+    <text>{{product.product_name}}</text>
+  </view>
+</view>

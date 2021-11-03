@@ -1,0 +1,4 @@
+<view class='container'>
+  <view class='line'></view>
+  <view class='text'>{{title}}</view>
+</view>
